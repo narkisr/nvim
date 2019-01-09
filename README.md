@@ -6,6 +6,16 @@ Nvim configuration
 
 # Usage
 
+```bash
+$ git clone git://github.com/narkisr/nvim.git
+```
+
+Install the plugins:
+
+```bash
+:PlugInstall
+```
+
 # Copyright and license
 
 Copyright [2018] [Ronen Narkis]
