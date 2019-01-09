@@ -1,0 +1,6 @@
+*.swp
+.netrwhist
+sessions
+pkg
+release
+plugged
