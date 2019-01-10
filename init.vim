@@ -42,6 +42,10 @@ Plug 'plasticboy/vim-markdown'
 " Code checks
 Plug 'scrooloose/syntastic'
 
+" Snippets
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+
 call plug#end()
 
 for module in ['camel_case','coloring','gvim','folding','key-bindings','backup','auto','syntastic','vimclojure','html_indent','spacing']
@@ -64,6 +68,7 @@ set ignorecase    " ignore case when searching
 set smartcase     " ignore case if search pattern is all lowercase, "    case-sensitive otherwise
 set hlsearch      " highlight search terms
 
+
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
 
@@ -82,3 +87,17 @@ let g:session_autoload = 'no'
 
 inoremap <silent> <buffer> <C-M-CR> <ESC>:call Toggle_task_status()<CR>i
 noremap <silent> <buffer> <C-M-CR> :call Toggle_task_status()<CR>
+
+
+" Neosnippet plugin mappings check https://github.com/Shougo/neosnippet.vim#configuration
+
+let g:neosnippet#enable_snipmate_compatibility = 1
+let g:deoplete#enable_at_startup = 1
+
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
