@@ -28,10 +28,8 @@ Plug 'bling/vim-airline'
 " Clojure
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'vim-scripts/paredit.vim'
-" refactoring
-" Plug 'snoe/clj-refactor.nvim'
-
-
+" formatting
+Plug 'venantius/vim-cljfmt'
 
 " autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
