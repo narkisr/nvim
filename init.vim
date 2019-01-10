@@ -36,7 +36,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'roxma/nvim-completion-manager'
 Plug 'clojure-vim/async-clj-omni'
 
-" Blogging
+" Markdown
 Plug 'plasticboy/vim-markdown'
 
 " Code checks
