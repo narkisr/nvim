@@ -4,7 +4,7 @@ filetype plugin indent on
 call plug#begin('~/.config/nvim/plugged')
 
 " Editor enhancements
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle',  'NERDTreeFind', 'NERDTree'] }
 " Git
 Plug 'tpope/vim-fugitive'
 " advance surround options
@@ -14,7 +14,7 @@ Plug 'bkad/CamelCaseMotion'
 " lusty juggler jumping between files
 Plug 'sjbach/lusty'
 Plug 'godlygeek/tabular'
-" search files
+" Search files
 Plug 'kien/ctrlp.vim'
 " indented vim paste
 Plug 'sickill/vim-pasta'
@@ -22,7 +22,7 @@ Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-endwise'
 " Comment shortcuts
 Plug 'tomtom/tcomment_vim'
-" Nice information line
+" Status line
 Plug 'bling/vim-airline'
 
 " Clojure
@@ -49,7 +49,7 @@ Plug 'Shougo/neosnippet-snippets'
 call plug#end()
 
 for module in ['camel_case','coloring','gvim','folding','key-bindings','backup','auto','syntastic','vimclojure','html_indent','spacing']
-  exec 'so' '~/.vim/.vimrc_modules/'.module.'.vim'
+  exec 'so' '~/.config/nvim/.vimrc_modules/'.module.'.vim'
 endfor
 
 let g:deoplete#keyword_patterns = {}
