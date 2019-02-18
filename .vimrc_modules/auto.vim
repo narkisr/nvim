@@ -4,7 +4,7 @@
 function! Indentclj()
   " saving current cursor location
   let regel=line(".")
-  %!cljfmt-node
+  %!cljfmt
   " removing the empty line added by cljfmt-node
   %!head -q --lines=-1
   " jumping back to old location
