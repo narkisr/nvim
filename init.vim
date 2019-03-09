@@ -40,7 +40,8 @@ Plug 'clojure-vim/async-clj-omni'
 Plug 'plasticboy/vim-markdown'
 
 " Code checks
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 
 " Snippets
 Plug 'Shougo/neosnippet.vim'
