@@ -100,4 +100,8 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 if has('conceal')
   set conceallevel=2 concealcursor=niv
+  set concealcursor-=n
 endif
+
+
+
