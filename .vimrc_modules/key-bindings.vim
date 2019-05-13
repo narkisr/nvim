@@ -15,11 +15,11 @@ map <leader>f :Ack<Space>
 
 " avoiding the esc key
 imap jj <Esc>
-" enabling replacing current selected text 
+" enabling replacing current selected text
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 vnoremap <C-R> "hy:,$s/<C-r>h//gc<left><left><left>
 
-" easy split navigation http://tinyurl.com/6pj4m4z  
+" easy split navigation http://tinyurl.com/6pj4m4z
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
@@ -33,7 +33,7 @@ nmap <F8> :TagbarToggle<CR>
 nnoremap <Leader>gs :Gstatus<cr>
 nnoremap <Leader>gc :Gcommit<cr>
 "vimdiff current vs git head (fugitive extension)
-nnoremap <Leader>gd :Gdiff<cr> 
+nnoremap <Leader>gd :Gdiff<cr>
 "switch back to current file and closes fugitive buffer
 nnoremap <Leader>gD :diffoff!<cr><c-w>h:bd<cr>
 nnoremap <Leader>gp :Git push origin master<cr>
@@ -42,7 +42,7 @@ nnoremap <Leader>gp :Git push origin master<cr>
 " unite mappings
 nnoremap <Leader>lj :Unite buffer<cr>
 
-" zencoding expansion see http://tinyurl.com/a4bn8bg   
+" zencoding expansion see http://tinyurl.com/a4bn8bg
 let g:user_emmet_leader_key = '<C-Z>'
 
 let g:user_emmet_settings = {
@@ -51,3 +51,8 @@ let g:user_emmet_settings = {
   \  },
   \}
 autocmd FileType html,xhtml,tt2,tt2html,css imap <buffer> <Tab> <C-Z>, | imap <buffer> <C-N> <C-Z>n
+
+nmap ]q :ALENext<cr>
+nmap [q :ALEPrevious<cr>
+
+nmap <C-L> :Piggieback (figwheel-sidecar.repl-api/repl-env)<cr>
