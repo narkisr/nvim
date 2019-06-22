@@ -33,7 +33,8 @@ Plug 'venantius/vim-cljfmt'
 
 " autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'roxma/nvim-completion-manager'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
 Plug 'clojure-vim/async-clj-omni'
 
 " Markdown
