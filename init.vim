@@ -12,7 +12,6 @@ Plug 'tpope/vim-surround'
 " moving with cammel case in mind
 Plug 'bkad/CamelCaseMotion'
 " lusty juggler jumping between files
-Plug 'sjbach/lusty'
 Plug 'godlygeek/tabular'
 " Search files
 Plug 'kien/ctrlp.vim'
@@ -30,12 +29,6 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'vim-scripts/paredit.vim'
 " formatting
 Plug 'venantius/vim-cljfmt'
-
-" autocompletion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'clojure-vim/async-clj-omni'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
