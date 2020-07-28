@@ -27,8 +27,6 @@ Plug 'bling/vim-airline'
 " Clojure
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'vim-scripts/paredit.vim'
-" formatting
-Plug 'venantius/vim-cljfmt'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
